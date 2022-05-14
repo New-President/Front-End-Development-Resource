@@ -1,0 +1,80 @@
+﻿body {
+    margin: auto;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+citation {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+table {
+    margin: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+caption {
+    padding-top: 10px;
+    font-size: 150%;
+}
+
+tr, th, td {
+    border: thin solid black;
+}
+
+tr:not(:first-child) {
+    height: 10px;
+}
+
+.tourfooter {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 75%;
+    font-style: italic;
+    background-color: Highlight;
+}
+
+form {
+    width: 80%;
+    border: 10px solid deepskyblue;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+}
+
+label {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.formheader {
+    text-align: center;
+}
+
+fieldset {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.footer2 {
+    text-align: right;
+    font-style: italic;
+    font-size: 75%;
+    color: deepskyblue;
+}

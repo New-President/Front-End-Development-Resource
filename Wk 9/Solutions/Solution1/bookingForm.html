@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yong Zi Ren" />
+    <meta name="description" content="Tour Booking Form" />
+    <title>Tour Booking Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/bookingScript.js"></script>
+</head>
+<body class="body2" onload="dateSet()">
+    <form onsubmit="showFinalMessage(); return false;" onreset="clearMessage()">
+        <h1>Sightseeing Activities in Singapore Booking Form</h1>
+        <fieldset>
+            <legend><b>Tour Detail</b></legend>
+            <p style="margin-left: 20px;">
+                Name of Tour:
+                <select name="Name of Tour" id="Name of Tour" onchange="showPrice()" required>
+                    <option value="none">Please select the tour</option>
+                    <option value="Beautiful Sentosa Island Afternoon Tour">Beautiful Sentosa Island Afternoon Tour</option>
+                    <option value="Half Day City Tour">Half Day City Tour</option>
+                    <option value="Singapore River Cruise">Singapore River Cruise</option>
+                    <option value="Christmas Light-Up Tour">Christmas Light-Up Tour</option>
+                </select>
+            </p>
+            <label for="Date">Date:</label>
+            <input type="date" id="Date" min="1899-01-01" max="2000-13-13" onchange="showDate()" required>
+            <p style="margin-left: 20px;">
+                Adult:
+                <input type="number" id="Adult" min="1" max="5" value="1" onchange="showPrice()" required />
+                Child:
+                <input type="number" id="Child" min="0" max="5" value="0" onchange="showPrice()" required />
+            </p>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <legend><b>Customer Detail</b></legend>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" autocomplete="on" placeholder="Enter your name" required>
+            <p></p>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" placeholder="Enter email addresses" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="51" required>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <legend><b>Booking Detail</b></legend>
+            <h2 class="tourjs" id="tourjs" style="margin-left: 20px; color: red;">No tour selected</h2>
+        </fieldset>
+        <p></p>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <p></p>
+        <footer class="footer2">Created by Yong Zi Ren</footer>
+    </form>
+</body>
+</html>

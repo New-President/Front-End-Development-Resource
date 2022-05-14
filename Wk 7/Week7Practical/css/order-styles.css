@@ -1,0 +1,29 @@
+﻿form {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.order {
+    border: 10px solid lightsalmon;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.order h1 {
+    background-color: lightsalmon;
+    text-align: center;
+    color: black;
+}
+
+.acknowledgement {
+    color: red;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.labels {
+    color: red;
+    margin-top: 40px;
+}

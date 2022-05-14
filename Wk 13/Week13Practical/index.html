@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSP Demo</title>
+    <meta name="author" content="Yong Zi Ren" />
+    <meta name="description" content="Week 13 Practical – Content Security Policy" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+</head>
+<body>
+    <div id="wrapper-div">
+        <h1>CSP Example</h1><p>
+            <h4>Mitigating XSS</h4>
+            <div id="displayInput-box">
+                <label class="input" for="input">Input XSS Code</label>
+                <br>
+                <input type="text" id="input" class="input">
+                <div id="confirm">
+                    <button id="confirm-button">OK</button>
+                </div>
+            </div>
+            <br>
+    </div>
+    <div id="wrapper-div">
+        <div id="output">
+            output <!--<a onmouseover="alert(1)"\>Click me!</a>-->
+        </div>
+        <script src="js/index.js"></script>
+    </div>
+</body>
+</html>

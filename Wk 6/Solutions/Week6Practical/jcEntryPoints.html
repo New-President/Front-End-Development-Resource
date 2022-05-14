@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="FED Lecturer" />
+    <meta name="description" content="JC Entry Cut Off Points" />
+    <title>JC Entry Cut Off Points</title>
+    <script src="js/jcEntryScript.js"></script>   
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <form id="jcform">
+        <h1>JC Entry Cut Off Points</h1>
+        Select a shool:
+        <select id="schoolName" name="schoolName" onchange="determinPoints()" required>
+            <option value="None">Select a JC</option>
+            <option value="ACJC">ACJC</option>
+            <option value="AJC">AJC</option>
+            <option value="CJC">CJC</option>
+            <option value="EJC">EJC</option>
+            <option value="HCI">HCI</option>
+            <option value="NJC">NJC</option>
+            <option value="NYJC">NYJC</option>
+            <option value="SAJC">SAJC</option>
+            <option value="TJC">TJC</option>
+            <option value="VJC">VJC</option>
+        </select>
+        <p id="cutoff">Select a JC</p>
+    </form>
+</body>   
+</html>

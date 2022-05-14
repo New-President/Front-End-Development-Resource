@@ -1,0 +1,47 @@
+﻿@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    
+}
+
+fieldset {
+    padding: 10px 20px 20px;
+    border: thick solid sandybrown;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    background-color: sandybrown;
+}
+
+#output, #collectionDate, #finalMessage {
+    color: red;
+}
+
+#finalMessage {
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+#p2 {
+    width: 100%;
+    margin: auto;
+}

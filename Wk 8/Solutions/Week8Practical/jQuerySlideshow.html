@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Slide Show</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        function fadeImage(I) {
+            var Image = '#' + I; //String concatenation 
+            $(Image).fadeIn();
+            $(Image).fadeOut(3000, function () { fadeImage((I == 1) ? 5 : I - 1); });
+        }
+    </script>
+
+    <style>
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body onload="fadeImage(5);">
+    <img id="1" src="images/1.jpg"/>
+    <img id="2" src="images/2.jpg"/>
+    <img id="3" src="images/3.jpg"/>
+    <img id="4" src="images/4.jpg"/>
+    <img id="5" src="images/5.jpg"/>
+</body>
+</html> 

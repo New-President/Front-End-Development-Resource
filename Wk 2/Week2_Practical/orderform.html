@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CSS/styles(1).css">
+    <meta name="author" content="Yong Zi Ren" />
+    <meta name="description" content="Using Embedded elements" />
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <form>
+        <h1>Pizza Order Form</h1>
+
+        <label for="Pizza Type">Pizza Type:</label>
+        <select name="Pizza Type" id="Pizza Type" required>
+            <option value="Please select an option">Please select...</option>
+            <option value="Aloha Chicken">Aloha Chicken</option>
+            <option value="Beef Pepperoni">Beef Pepperoni</option>
+            <option value="Chicken Delight">Chicken Delight</option>
+            <option value="Deluxe Cheese">Deluxe Cheese</option>
+        </select>
+
+        <label for="Quantity">Quantity:</label>
+        <input type="number" id="Quantity" min="1" max="4" value="1">
+        <p></p>
+
+        <fieldset>
+            <legend>Size:</legend>
+            <input type="radio" name="Size" value="Small" required />
+            Small
+            <input type="radio" name="Size" value="Medium" required />
+            Medium
+            <input type="radio" name="Size" value="Large" required />
+            Large
+        </fieldset><br />
+
+        <fieldset>
+            <legend>Crust:</legend>
+            <input type="radio" name="Crust" value="Thin" required />
+            Thin
+            <input type="radio" name="Crust" value="Thick" required />
+            Thick
+            <input type="radio" name="Crust" value="Deep Dish" required />
+            Deep Dish
+        </fieldset><br />
+
+        <fieldset>
+            <legend>Toppings</legend>
+            <input type="checkbox" name="Toppings" value="Mushrooms" />
+            Mushrooms
+            <input type="checkbox" name="Toppings" value="Sasauge" />
+            Sasuage
+            <input type="checkbox" name="Toppings" value="Olives" />
+            Olives
+        </fieldset>
+
+        <p>Addons:
+        <select name="Addons" id="Addons">
+            <option value="Please select addons if required">Please select addons if required</option>
+            <option value="Side of Buffalo Wings">Side of Buffalo Wings</option>
+            <option value="Garlic Bread">Garlic Bread</option>
+        </select>
+        <p></p>
+
+        <fieldset>
+            <legend>Deliver to:</legend>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" autocomplete="on" required>
+            <p></p>
+
+            <label for="Address">Address:</label>
+            <textarea id="Address" name="Address" rows="2" cols="30" required></textarea>
+            <label for="Postal Code">Postal Code:</label>
+            <input type="text" id="Postal Code" maxlength="6" pattern="[0-9]{6}" size="6" required>
+            <p></p>
+
+            <label for="Phone">Phone #:</label>
+            <input type="text" id="Phone" maxlength="8" pattern="[9,8,6]{1}[0-9]{7}" size="8" required>
+            <p></p>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" placeholder="Enter email addresses" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="51" required>
+            <p></p>
+
+            <label for="Date">Date:</label>
+            <input type="date" id="Date" min="2019-10-29" max="2019-11-04" value="2019" required>
+            <label for="Time">Time:</label>
+            <input type="time" id="Time" min="10:00" max="22:00" step="15" value="10:00" required>
+        </fieldset>
+        <p></p>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>

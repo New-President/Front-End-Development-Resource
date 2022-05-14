@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Flexbox Product Listing Exercise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- To Do: Reference to the JavaScript library for including a HTML page -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+
+    <!-- To Do: Include the header section -->
+    <div w3-include-html="header.html"></div>
+    <div class="container-fluid">
+        <!-- 2nd row - Content Section -->
+        <div class="row">
+            <!-- Left column - Main content (67% width) -->
+            <div class="col-md-4">
+                <section class="title">
+                    <h1 style="font-weight:normal; font-size:4em;color:brown;align-content:center;border:double;">Bistro Items To Go</h1>
+                </section>
+            </div>
+        
+            <!-- Left column - Main content (67% width) -->
+            <div class="col-md-8">
+
+                <div style="border:groove;border-color:chocolate; margin-block:4px;">
+                    <section class="dish" style="margin:4px;">
+                        <h2>Black bean purses</h2>
+                        <p class="info" style="border:dashed;border-color:sandybrown;">Spicy black bean and a blend of Mexican cheeses wrapped in sheets of phyllo and baked until golden.</p>
+                        <p class="photo"><img src="images/table.jpg" alt=""></p>
+                        <p class="price">$3.95</p>
+                    </section>
+                </div>
+                <div style="border:groove;border-color:chocolate; margin-block:4px;">
+                    <section class="dish" style="margin:4px;">
+                        <h2>Southwestern Napoleons</h2>
+                        <p class="info" style="border: dashed; border-color: sandybrown;">Layers of light lump crab meat, bean, and corn salsa, and our handmade flour tortillas.</p>
+                        <p class="photo"><img src="images/table.jpg" alt=""></p>
+                        <p class="price">$7.95</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end #container div -->
+    <!-- To Do: Include the footer section -->
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

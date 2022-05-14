@@ -1,0 +1,89 @@
+﻿/* Q1 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+citation {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+img {
+    padding-top: 20px;
+    max-width: 100%;
+}
+table {
+    padding: 20px;
+    text-align: left;
+    border: medium solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+caption {
+    font-size: 1.5rem;
+}
+.col2, .col3 {
+    width: 150px;
+}
+tr:first-child, tr:last-child {
+    background-color: azure;
+}
+th, td {
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+    border-right: thin solid black;
+}
+
+#tourFooter {
+    font-style: italic;
+    text-align: center;
+    background-color: Highlight;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 75%;
+}
+
+/* Q2 */
+
+form {
+    width: 80%;
+    margin: auto;
+    border: 10px solid deepskyblue;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.labelAlign {
+    width: 100px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.labelMargin {
+    display: inline-block;
+    margin-left: 20px;
+}
+legend {
+    font-weight: bold;
+}
+fieldset {
+    padding: 20px 20px 0 20px;
+    border-radius: 10px;
+}
+#formFooter {
+    padding-top: 20px;
+    font-style: italic;
+    text-align: right;
+    font-size: 75%;
+    color: deepskyblue;
+}
+.bookingDetail {
+    display: inline-block;
+    margin-left: 20px;
+    color: red;
+    font-weight: bold;
+    padding-bottom: 10px;
+}

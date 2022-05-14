@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!-- To fill in author, description and title attribute -->
+    <meta name="author" content="Yong Zi Ren" />
+    <meta name="description" content="BMI Calculator" />
+    <title>BMI Calculator</title>
+    <!-- To fill in: link to styling sheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- To fill in: link to external javascript file -->
+    <script src="bmiScript.js" defer></script>
+</head>
+<body onload="calculateBMI()">
+    <form >
+        <h1>BMI Calculator</h1>
+        <p>
+            <label class="align_label">Enter weight: </label>
+            <input id="weight" value="50" onchange="calculateBMI()"/>
+        </p>
+        <p>
+            <label class="align_label">Enter height: </label>
+            <input id="height" value="1.7" onchange="calculateBMI()"/>
+        </p>
+
+        <p id="output" class="bluecolor"></p>
+        
+    </form>
+</body>
+</html>

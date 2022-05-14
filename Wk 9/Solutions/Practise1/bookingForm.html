@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="FED Lecturer" />
+    <meta name="description" content="Tour Booking Form" />
+    <title>Tour Booking Form</title>
+    <script src="js/bookingScript.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <form id="orderForm" onsubmit="submitForm(); return false">
+        <h1>Sightseeing Activities in Singapore Booking Form</h1>
+        <fieldset id="tourDetail">
+            <legend>Tour Detail</legend>
+            <label for="tourName" class="labelAlign">Name of Tour:</label>
+            <select name="tourName" required onchange="determineCost()">
+                <option value="">Please select the tour</option>
+                <option value="Sentosa">Beautiful Sentosa Island Afternoon Tour</option>
+                <option value="City Tour">Half Day City Tour</option>
+                <option value="River Cruise">Singapore River Cruise</option>
+                <option value="Christmas">Christmas Light-Up Tour</option>
+            </select>
+            <p>
+                <label for="date" class="labelAlign">Date:</label>
+                <input type="date" name="date" id="date" placeholder="mm/dd/yy" required onchange="getDate()" />
+            </p>
+            <p>
+                <label for="adult" class="labelMargin">Adult:&nbsp;</label>
+                <input type="number" name="adult" id="adult" min="1" max="5" value="1" onchange="displayTotalPrice()" />
+                <label for="child">&nbsp;&nbsp;Child:&nbsp;</label>
+                <input type="number" name="child" id="child" min="0" max="5" value="0" onchange="displayTotalPrice()" />
+            </p>
+        </fieldset>
+        <br />
+        <fieldset id="customerDetail">
+            <legend>Customer Detail</legend>
+            <label for="name" class="labelAlign">Name:</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name" required />
+            <p>
+                <label for="email" class="labelAlign">Email:</label>
+                <input type="email" name="Email" size="50" placeholder="Enter email addresses" required />
+            </p>
+        </fieldset>
+        <br />
+        <fieldset id="bookingDetail">
+            <legend>Booking Detail</legend>
+            <label id="unitPrice" class="bookingDetail">No tour selected</label>
+            <label id="totalPrice" class="bookingDetail"></label>
+            <label id="dateSelected" class="bookingDetail"></label>
+            <label id="finalMessage" class="bookingDetail"></label>
+        </fieldset>
+        <br />
+        <input type="submit" />
+        <input type="reset" onclick="resetForm()" />
+
+        <a href="index.html">Return to Home Page</a>
+        <br />
+        <footer id="formFooter">Created by [your name]</footer>
+    </form>
+</body>
+</html>

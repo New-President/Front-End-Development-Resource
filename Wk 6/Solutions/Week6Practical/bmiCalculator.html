@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="FED Lecturer" />
+    <meta name="description" content="BMI Calculator" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/bmiScript.js" ></script>
+</head>
+<body onload="calculateBMI()">
+    <form >
+        <h1>BMI Calculator</h1>
+        <p>
+            <label class="align_label">Enter weight: </label>
+            <input id="weight" value="50" onchange="calculateBMI()"/>
+        </p>
+        <p>
+            <label class="align_label">Enter height: </label>
+            <input id="height" value="1.7" onchange="calculateBMI()"/>
+        </p>
+
+        <p id="output" class="bluecolor"></p>
+        
+    </form>
+</body>
+</html>

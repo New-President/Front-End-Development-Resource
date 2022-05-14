@@ -1,0 +1,74 @@
+﻿body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    padding: 5px 10px;
+    border: 10px solid olive;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*style for Task 2*/
+.align_label
+{
+    width: 150px;
+    display: inline-block;
+}
+
+.bluecolor
+{
+    color: blue;
+}
+
+/*style for Task 3*/
+#cutoff {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #ff0;
+    font-size: large;
+}
+
+/*style for Task 4*/
+#pizzaform {
+    padding: 5px 10px;
+    border: 10px solid olive;
+    width: 80%;
+    margin: 0 auto;
+}
+#addOns {
+    margin-left: 300px;
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 20px;
+}
+
+label, select {
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+fieldset {
+    border-radius: 10px;
+}
+input {
+    vertical-align: top;
+}
+#totalPrice {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #ff0;
+    font-size: x-large;
+}
+#finalMessage {
+    display: inline;
+    width: 300px;
+    color:blue;
+    font-weight:bold;
+}

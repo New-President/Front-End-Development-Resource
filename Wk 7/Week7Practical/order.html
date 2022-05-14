@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)https://mel.np.edu.sg/bbcswebdav/pid-4332110-dt-content-rid-36482062_2/courses/21S2-2_FED_011848/order%282%29.html -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- To Do: Set Title -->
+    <title>Order</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- To Do: Bootstrap minified CSS, refer to week 4 if forgotten to add  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- To Do: jQuery library, refer to week 4 if forgotten to add  -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- To Do: Bootstrap JavaScript, refer to week 4 if forgotten to add  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/orderScript.js"></script>
+    <!-- To Do: Site specific Cascading Stylesheet -->
+    <link rel="stylesheet" href="css/order-styles.css">
+    <!-- To Do: Reference to the JavaScript library for including a HTML page, refer to week 5 if forgotten to add W3.IncludeHTML -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style type="text/css"></style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1040.0" data-gr-ext-installed="" onload="dateSet()">
+    <div class="container-fluid">
+        <!-- To Do: Include the header section -->
+        <div class="row">
+            <!-- Bootstrap Grid column, full width -->
+            <div class="col-sm-12">
+                <!-- To Do: Include the header section -->
+                <div w3-include-html="header.html"></div>
+            </div>
+        </div>
+        <!-- Form Section -->
+        <div class="row">
+            <div class="col-12">
+                <form id="orderForm" onsubmit="showFinalMessage(); return false;" onreset="clearMessage()">
+                    <!-- To Do: Code the form here -->
+                    <div class="order">
+                        <h1>Order Form</h1>
+                        <label for="Item">Item:</label>
+                        <select name="Item" id="Item" onchange="showPrice()" required>
+                            <option value="Please select an option">Please select...</option>
+                            <option value="Black bean purses">Black bean purses</option>
+                            <option value="Southwestern Napoleons">Southwestern Napoleons</option>
+                        </select>
+                        <label for="Quantity">Quantity:</label>
+                        <input type="number" id="Quantity" min="1" max="5" value="1" onchange="showPrice()" />
+                        <p></p>
+                        <label for="Name">Name:</label>
+                        <input type="text" id="Name" required />
+                        <p></p>
+                        <label for="Date">Collection Date:</label>
+                        <input type="date" id="Date" min="1899-01-01" max="2000-13-13" onchange="showDate()" required>
+                        <div class="labels">
+                            <p id="cost"></p>
+                            <p id="collectiondate"></p>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+                <p></p>
+                <h2 id="acknowledgement" class="acknowledgement"></h2>
+            </div>
+        </div>
+           
+       
+        <!-- To Do: Include the footer section -->
+        <div class="row">
+            <!-- Bootstrap Grid column, full width -->
+            <div class="col-sm-12">
+                <!-- To Do: Include the footer section -->
+                <div w3-include-html="footer.html"></div>
+            </div>
+        </div>
+    </div> <!-- end #container div -->
+    <script>
+        w3.includeHTML();
+    </script>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

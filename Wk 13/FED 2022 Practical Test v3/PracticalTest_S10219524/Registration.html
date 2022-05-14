@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yong Zi Ren" />
+    <meta name="description" content="Registration Form" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/practiseTest.js"></script>
+    <title>Practical Test</title>
+</head>
+<body>
+    <img style="width: 160px; height: 80px;" src="images/ICT(3).jpg" alt="ICT Logo" onclick="http://www.np.edu.sg/ict" />
+    <form onsubmit="showFinalMessage(); return false;" class="">
+        <h2>Open House Registration Form</h2>
+        <label for="Course Interested">Course Interested</label>
+        <select name="Course Interested" id="Course Interested" required>
+            <option value="CSF">CSF</option>
+            <option value="FI">FI</option>
+            <option value="IMGD">IMGD</option>
+            <option value="IT">IT</option>
+        </select>
+        <p></p>
+        <label for="Your Qualification">Your Qualification</label>
+        <input type="radio" id="Your Qualification" value="ITE" required/>ITE
+        <input type="radio" id="Your Qualification" value="GCE'O'" required/>GCE'O'
+        <input type="radio" id="Your Qualification" value="GCE'A'" required/>GCE'A'
+
+        <p></p>
+        <label for="Name">Name</label>
+        <input type="text" placeholder="Enter your name" id="Name" required/>
+
+        <p></p>
+        <label for="Email">Email address</label>
+        <input type="email" placeholder="Enter your email address" id="email" required/>
+
+        <p></p>
+        <label for="Activities Attending">Activities Attending</label>
+        <input type="checkbox" id="Activities Attending1" value="Day 1" />Day 1
+        <input type="checkbox" id="Activities Attending2" value="Day 2" />Day 2
+        <input type="checkbox" id="Activities Attending3" value="Day 3" />Day 3
+
+        <p></p>
+        <label for="Remarks">Remarks</label>
+        <textarea id="Remarks" name="Remarks" rows="3" cols="30" placeholder="Refreshment will be provided" required></textarea>
+
+        <p></p>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <p></p>
+        <p id="finalmsg"></p>
+        <p></p>
+    </form>
+    <footer style="border-bottom: 0;"><p>Done by Yong Zi Ren</p></footer>
+    <a href="OpenHouse2022.html"><p>Return to Home Page</p></a>
+</body>
+</html>

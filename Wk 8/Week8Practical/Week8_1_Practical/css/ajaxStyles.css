@@ -1,0 +1,14 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 20px;
+    color: red;
+}
+p {
+    font-size: 12px;
+    color: orange;
+}
+em {
+    color: green;
+}

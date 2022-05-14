@@ -1,0 +1,39 @@
+﻿@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/*
+.img-fluid { 
+    display: block; 
+    max-width:80%;  
+    margin:auto; 
+    padding-bottom:10px;
+}
+*/
+.carousel-inner img {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#gallery-heading, h3 {
+    background-color: bisque;
+    text-align: center;
+    font-family: Verdana, Arial, serif;
+    color: rosybrown;
+}
+
+.carousel-control-prev
+{
+    left: 5%;    
+}
+
+.carousel-control-next {
+    right: 5%;
+}

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="FED Lecturer" />
+    <meta name="description" content="Pizza Ordering" />
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/pizzaScript.js" defer></script>
+</head>
+<body onload="hideTotal()">
+    <form id="pizzaform" onsubmit="submitForm(); return false">
+        <h1>Pizza Order Form</h1>
+        <label>Pizza Type:</label>
+        <select name="pizza type" required>
+            <option value="">Please select the pizza type</option>
+            <option value="aloha chicken">Aloha Chicken</option>
+            <option value="beef pepperoni">Beef Pepperoni</option>
+            <option value="chicken delight">Chicken Delight</option>
+            <option value="deluze cheese">Deluze Cheese</option>
+        </select>
+        <label>&nbsp;&nbsp;Quantity:</label>
+        <input id="quantity" name="quatity" type="number" min="1" max="4" value="0" onchange="calculateTotal()">
+        <p>
+            <fieldset name="Size">
+                <legend>Size:</legend>
+                <input type="radio" name="size" id="size" value="small" onclick="calculateTotal()" checked required> Small
+                <input type="radio" name="size" id="size" value="medium" onclick="calculateTotal()"> Medium
+                <input type="radio" name="size" id="size" value="large" onclick="calculateTotal()"> Large
+            </fieldset>
+        <p>
+            <fieldset name="Crust">
+                <legend>Crust:</legend>
+                <input type="radio" name="crust" value="thin" required> Thin
+                <input type="radio" name="crust" value="thick"> Thick
+                <input type="radio" name="crust" value="deep dish"> Deep Dish
+            </fieldset>
+        </p>
+        <p>
+            <fieldset name="Topping">
+                <legend>Toppings:</legend>
+                <input type="checkbox" id="topping" name="topping" value="Mushrooms" onclick="calculateTotal()"/>Mushrooms
+                <input type="checkbox" id="topping" name="topping" value="Sausage" onclick="calculateTotal()" />Sausage
+                <input type="checkbox" id="topping" name="topping" value="Olives" onclick="calculateTotal()"/>Olives
+            </fieldset>
+        </p>
+        <p>
+            <label>Addons:</label>
+            <select name="addons" id="addons" multiple="multiple" onchange="calculateTotal()">
+                <option value="wings">Buffalo Wings</option>
+                <option value="garlicBread">Garlic Bread</option>
+            </select>
+        </p>
+        <div id="totalPrice"></div>
+        <p>
+            <fieldset name="Deliver to">
+                <legend>Deliver to:</legend>
+                <label for="iName">Name:</label>
+                <input id="iName" name="Name" type="text" autocomplete="Name" required />
+                <br /><br />
+                <label for="iAddress">Address:</label>
+                <textarea id="iAddress" rows="2" cols="30" name="Address" autocomplete="on" required></textarea>
+                <label for="iPostalCode">Postal Code:</label>
+                <input id="iPostalCode" type="text" maxlength="6" size="6" name="PostalCode" required pattern="\d{6}" />
+                <br /><br />
+                <label for="iTelephone">Phone #:</label>
+                <input type="tel" id="iTelephone" name="Phone" size="8" pattern="[689]\d{7}" required />
+                <br /><br />
+                <label for="iEmail">Email:</label>
+                <input type="email" id="iEmail" name="Email" size="50" placeholder="Enter email addresses" required />
+                <br /><br />
+                <label for="iDate">Date:</label>
+                <input type="date" id="iDate" name="Date" required />
+                <label for="iTime">Time:</label>
+                <input type="time" id="iTime" name="Time" value="10:00" min="10:00" max="22:00" step="900" required />
+                <br />
+            </fieldset>
+        </p>
+        <p>
+            <input type="submit" >
+            <input type="reset" onclick="resetForm()"/>
+        </p>
+        <p id="finalMessage" ></p>        
+    </form>
+</body>
+
+</html>

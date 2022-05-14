@@ -1,0 +1,16 @@
+table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+caption {
+    
+}
+
+tr, th, td {
+    border: thin solid black;
+}
+
+tr:not(:first-child) {
+    height: 10px;
+}

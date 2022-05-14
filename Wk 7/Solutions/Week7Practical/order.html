@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Order</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Site specific Cascading Stylesheet -->
+    <link rel="stylesheet" href="css/order-styles.css">
+    <!-- To Do: Reference to the JavaScript library for including a HTML page -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="js/order-script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- To Do: Include the header section -->
+        <div w3-include-html="header.html"></div>
+
+        <!-- Form Section -->
+        <div class="row">
+            <div class="col-12">
+                <form id="orderForm"
+                      onsubmit="showFinalMessage(); return false;" 
+                      onreset="clearMessage()">
+                    <fieldset>
+                        <h2>Order Form</h2>
+                        <label>Item:</label>
+                        <select id="product" onchange="printOutput()" required>
+                            <option value="">Please select an item</option>
+                            <option value="Black bean purses">Black bean purses</option>
+                            <option value="Southwestern Napoleons">Southwestern Napoleons</option>
+                            <option value="Coconut-Corn Chowder">Coconut-Corn Chowder</option>
+                            <option value="Jerk Rotisserie Chicken">Jerk Rotisserie Chicken</option>
+                            <option value="Thai Shrimp Kebabs">Thai Shrimp Kebabs</option>
+                            <option value="Pasta Puttanesca">Pasta Puttanesca</option>
+                        </select>
+                        <label>&nbsp;&nbsp;Quantity:</label>
+                        <input id="quantity" name="quatity" type="number" min="1" max="5" value="1" onchange="printOutput()">
+                        <p></p>
+                        <label>Name:</label>
+                        <input id="name" type="text" required />
+                        <p></p>
+                        <label>Collection Date:</label>
+                        <input id="date" type="date" required onchange="printDate()" />
+                        <p></p>
+                        <br />
+                        <span id="output"></span>
+                        <span id="collectionDate"></span>
+                    </fieldset>
+                    <br />
+                    <div id="p2">
+                        <input type="submit" value="Submit" />
+                        <input type="reset" id="reset" />
+                        <p><span id='finalMessage'></span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+           
+       
+        <!-- To Do: Include the footer section -->
+        <div w3-include-html="footer.html"></div>
+
+    </div> <!-- end #container div -->
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

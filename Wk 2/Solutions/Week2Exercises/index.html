@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tan Ah Kow" />
+    <meta name="description" content="Using Embedded Elements" />
+    <title>Week 2 Exercise</title>
+    <link rel="icon" type="image/x-icon" href="media/HTMLBadge.ico" />
+</head>
+
+<body>
+    <h1>Week 2 Exercise</h1>
+ 
+    <a href="http://www.np.edu.sg" target="_blank">Ngee Ann Polytechnic</a>
+
+    <h3>Creating a hyperlink to an image</h3>
+    <a href="http://www.np.edu.sg" target="_blank">
+        <img src="media/NPcrest.png" alt="Ngee Ann Polytechnic crest" />
+    </a>
+
+    <h3>Different size of the same image for different viewport sizes</h3>
+    <p>This image will resize based on the viewport</p>
+
+     <img src="media/HTML5.jpg" alt="The HTML5 Badge logo"
+         srcset="media/HTML5.jpg 300w"
+         sizes="(max-width: 200px) 25vw, (max-width: 400px) 50vw, (max-width: 600px) 75vw, 100vw" />
+
+    <h3>Different image files for different viewport sizes</h3>
+    <p>This image will change based on the width of viewport</p>
+    <picture>
+        <source media="(min-width: 650px)" srcset="media/img_pink_flowers.jpg">
+        <source media="(min-width: 465px)" srcset="media/img_white_flower.jpg">
+        <img src="media/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+    <h3>Audio file</h3>
+    <audio controls>
+        <source src="media/O the Blood.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video file</h3>
+    <video controls>
+        <source src="media/BigBuckBunny.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+    </video>
+</body>
+</html>
